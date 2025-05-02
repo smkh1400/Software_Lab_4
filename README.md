@@ -118,6 +118,42 @@ Scenario Outline: Performing an operation on two numbers
 
 ![alt text](image.png)
 
+##  پیاده سازی کلاس Calculator
+
+![alt text](image-1.png)
+همان طور که تصویر مشخص است توابع مربوط به محاسبات دیگر را در کلاس
+Calculator
+قرار می دهیم.
+
+
+## پیاده سازی MyStepdefs بر اساس سناریو های جدید
+گام زیر را برای عباراتی مانند  ‍‍‍`I have entered 6 into the calculator`
+پیاده میکنیم :
+![alt text](image-2.png)
+از آن جایی که مقدار اول و دوم را با همین عبارت وارد میکنیم متغیر
+`isValue1Initailized`
+را قرار بار اول با مقدار 
+false
+اجرا میکنیم و برای اجرای بار دوم آن را
+true
+میکنیم.
+
+برای عبارات 
+`When I press /`
+که عملگر را وارد میکنیم نیز چنین تعریف میکنیم :
+
+![alt text](image-3.png)
+که یک
+‍‍`switch case`
+روی حالات متفاوت عملگر است.
+
+همچنان برای 
+assert
+کردن پاسخ از همان گامی که برای 
+adder
+بود استفاده میکنیم : 
+![alt text](image-4.png)
 
 ## نتیجه اجرای تست ها
+همان طور که در لاگ اجرای تست ها نوشته شده است، تست ها با موفقیت اجرا میشوند :
 ![img.png](img.png)
